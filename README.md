@@ -29,3 +29,19 @@ Blocks are the building blocks of a blockchain. A block contains transaction dat
   - __Hash__: A unique code produced by combining all the contents within the block itself — also known as a digital fingerprint.
 
   - __Previous Hash__: Each block has a reference to the block prior to its hash. This is what makes the blockchain unique because this link will be broken if a block is tampered with.
+
+### Hashing
+
+Hashing is an application of cryptography that is fundamental to the design of the blockchain. It is a way to generate a seemingly random, but calculated string of letters and numbers from any input. This is accomplished by the use of a hash function.  Blockchain uses a cryptographic hash function, meaning that the output is random but deterministic.
+
+### Key terms
+
+  - __Deterministic__: The same input will always produce the same output, but that output cannot produce the original input.
+
+  - __Hash__: A calculated string of letters and numbers produced from a specific input.
+
+  - __Hash Function__: A function that takes in an input of a random size, performs hashing on the input, and generates a seemingly random output of a fixed size, also known as the hash.
+
+###  Genesis Block
+
+The genesis block is the first block on the blockchain and it is typically hard-coded into the blockchain structure. Being the first block on the blockchain, it does not have a link to a previous hash.
