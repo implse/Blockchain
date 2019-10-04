@@ -42,6 +42,16 @@ Hashing is an application of cryptography that is fundamental to the design of t
 
   - __Hash Function__: A function that takes in an input of a random size, performs hashing on the input, and generates a seemingly random output of a fixed size, also known as the hash.
 
+
+The 5 requirements for Hash algorithms:
+  - One way.
+  - Deterministic.
+  - Fast computation.
+  - The avalanche effect. (tiny change in, completely new hash)
+  - Must withstand collisions.
+
+  The hash function that’s most commonly used to create the hash is the SHA-256.
+
 ###  Genesis Block
 
 The genesis block is the first block on the blockchain and it is typically hard-coded into the blockchain structure. Being the first block on the blockchain, it does not have a link to a previous hash.
