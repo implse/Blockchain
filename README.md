@@ -55,3 +55,15 @@ The 5 requirements for Hash algorithms:
 ###  Genesis Block
 
 The genesis block is the first block on the blockchain and it is typically hard-coded into the blockchain structure. Being the first block on the blockchain, it does not have a link to a previous hash.
+
+
+### Proof of Work
+
+
+Proof of Work introduce an additional security constraint to verify transactions. This constraint takes the form of a computationally difficult math problem, which means to say that it takes a lot of time even for the computer to solve the problem.
+
+The hash function that’s most commonly used to create the hash for the block is the SHA-256. Miners first guess a nonce value, which is then combined with the contents of the block (i.e transactions, timestamp, hash, and previous hash). They repeat this process until the desired hash is generated.
+
+  - __Miners__: Special participants who calculate the "Proof of Work" to mine new blocks.
+
+  - __Nonce__: A number to be guessed by miners which when combined with the block produces an acceptable hash.
