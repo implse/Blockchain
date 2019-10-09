@@ -1,4 +1,4 @@
-# INTRODUCTORY BLOCKCHAIN CONCEPTS
+# Blockchain Introduction 
 
 ## What is Blockchain?
 
