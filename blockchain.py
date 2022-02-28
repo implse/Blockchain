@@ -1,25 +1,4 @@
-import datetime
-from hashlib import sha256
-
-
-class Block:
-    def __init__(self, transactions, previous_hash):
-        self.time_stamp = datetime.datetime.now()
-        self.transactions = transactions
-        self.previous_hash = previous_hash
-        self.nonce = 0
-        self.hash = self.generate_hash()
-
-    def generate_hash(self):
-        block_header = str(self.time_stamp) + str(self.transactions) +str(self.previous_hash) + str(self.nonce)
-        block_hash = sha256(block_header.encode())
-        return block_hash.hexdigest()
-
-    def print_contents(self):
-        print("timestamp:", self.time_stamp)
-        print("transactions:", self.transactions)
-        print("current hash:", self.generate_hash())
-        print("previous hash:", self.previous_hash)
+from block import Block
 
 class Blockchain:
     def __init__(self):
@@ -37,8 +16,9 @@ class Blockchain:
         previous_hash = (self.chain[len(self.chain)-1]).hash
         new_block = Block(transactions, previous_hash)
         new_block.generate_hash()
-        # proof = proof_of_work(block)
+        proof = self.proof_of_work(new_block)
         self.chain.append(new_block)
+        return proof, new_block
 
     def print_blocks(self):
         for i in range(len(self.chain)):

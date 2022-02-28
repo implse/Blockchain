@@ -1,10 +1,12 @@
-from blockchain import Block, Blockchain
+from block import Block
+from blockchain import Blockchain
 
 
 # Instantiate class
 local_blockchain = Blockchain()
 
-#local_blockchain.print_blocks()
+# Genesis block
+local_blockchain.print_blocks()
 
 # Transactions
 block_one_transactions = {"sender":"Keanu", "receiver": "Charly", "amount":"50"}
