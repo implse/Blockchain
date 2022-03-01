@@ -36,8 +36,6 @@ A `blockchain`, is a growing list of records, called `blocks`, that are linked u
 
 A good `hash` function uses a one-way `hashing algorithm`, meaning the `hash` cannot be converted back into the original key.
 
-`Blockchain` uses a `cryptographic hash function`, meaning that the output is random but deterministic.
-
 
 ### Key terms
 
